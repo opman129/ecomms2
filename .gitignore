@@ -6,7 +6,7 @@ include/
 pip-selfcheck.json
 pages/
 project/
-courses/
+#courses/
 # Django related 
 # src/<yourproject>/settings/local.py
 # static-cdn/  # any collected static files 
