@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}    <!--render out database objects-->
+
+<!--{% load static %}<img src="{% static "fountain/pic01.jpg" %}" alt="banner image"/>
+{{ object_list }}-->
+
+<div class='col-sm-12 col-sm-offset-3'>
+        <h1 style="font-family:sans-serif; color:rgb(50, 127, 129); margin-top:10px;">Movies</h1>
+        <hr>
+{% for instance in object_list %}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="thumbnail">
+            {% if instance.image %}
+            <img src="{{ instance.image.url }}" class="img-fluid" alt="Responsive image" style="height: 300px; width:550px;">
+            {% endif %} 
+            <div class="caption">
+                <h3><a href="{{ instance.get_absolute_url }}">{{ instance.title }} <small style="font-size:15.5px;">
+                {{ instance.timestamp|timesince}} ago</small> </a></h3>
+                {% if instance.user.get_full_name %}
+                <p>Author: <strong>{{ instance.user.get_full_name }}</strong></p>
+                {% endif %}
+                <p>{{ instance.content }}</p>
+                <p><a href="{{ instance.get_absolute_url }}" class="btn btn-primary" role="button">View</a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <hr/>
+</div>
+<!-- {% cycle "" "<div class='col-sm-12'><hr></div></div><div class='row'>" %} -->
+
+{% endfor %}
+
+
+            {% if contacts.has_next %}
+                <a href="?page={{ cinema.next_page_number }}">next</a>
+                <a href="?page={{ cinema.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+
+    <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+        </nav>
+</div>
+{% endblock %}
