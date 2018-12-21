@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'project',
     'pages',
     'fountain',
-    'courses',
     'crispy_forms',
 ]
 
