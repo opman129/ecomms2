@@ -7,7 +7,7 @@ from fountain.views import (
     CinemaDeleteView
 )
 
-app_name = 'cinema'
+app_name = 'fountain'
 urlpatterns = [
     path('', CinemaListView.as_view(), name ='cinema-list'),
     path('create/', CinemaCreateView.as_view(), name = 'cinema-create'),
