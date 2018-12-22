@@ -17,20 +17,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
-from pages.views import home_view, contact_view, about_view, docs_view
-
 
 urlpatterns = [
 
     path('project/', include('project.urls')),
     path('fountain/', include('fountain.urls')),
-
-    path('', home_view, name='home'),
-    path('admin/', admin.site.urls),
-    path('contact/', contact_view,),
-    path('about/', about_view,),
-    path('docs/', docs_view,),
-] 
+    path('admin/', admin.site.urls), 
+]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
