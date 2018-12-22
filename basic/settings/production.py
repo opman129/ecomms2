@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '#yufro69f%qm4t!x_2j2_u**iz*7*bpa!hwxp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fountain-tech.herokuapps.com']
 
 
 # Application definition
