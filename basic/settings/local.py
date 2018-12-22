@@ -39,7 +39,6 @@ INSTALLED_APPS = [
 
     #own
     'project',
-    'pages',
     'fountain',
     'crispy_forms',
 ]
