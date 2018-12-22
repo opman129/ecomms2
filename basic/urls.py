@@ -24,7 +24,6 @@ urlpatterns = [
 
     path('project/', include('project.urls')),
     path('fountain/', include('fountain.urls')),
-    path('courses/', include('courses.urls')),
 
     path('', home_view, name='home'),
     path('admin/', admin.site.urls),
