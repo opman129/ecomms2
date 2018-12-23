@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_STORE
 
 # Virtualenv related
@@ -11,6 +12,14 @@ courses
 # src/<yourproject>/settings/local.py
 # static-cdn/  # any collected static files 
 
+=======
+.py[cod]
+.DS_Store
+bin/
+include/
+pip-selfcheck.json
+db.sqlite3
+>>>>>>> b7b1c4dbac4b6de4abf914242d9c4d5c0e71e3a7
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -110,4 +119,8 @@ ENV/
 /site
 
 # mypy
+<<<<<<< HEAD
 .mypy_cache/
+=======
+.mypy_cache/
+>>>>>>> b7b1c4dbac4b6de4abf914242d9c4d5c0e71e3a7
