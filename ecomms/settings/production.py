@@ -24,7 +24,7 @@ SECRET_KEY = os.environ.get('SECRET KEY','1470injl4_9hmvby*5u@qvvjqmwo#ajl1h%3-3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ecomms.herokuapp.com', '.yourdomain.com']
+ALLOWED_HOSTS = ['ecomms.herokuapp.com']
 
 
 # Application definition
