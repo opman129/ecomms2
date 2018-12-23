@@ -1,0 +1,42 @@
+h1,h2, h3, h4{
+    color: rgb(83, 83, 83);
+}
+
+.posts{
+    width: 60%;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.nav{
+    background: #e9ecef;
+    list-style-type: none;
+    overflow: hidden;
+    display: block;
+}
+
+.nav ul{
+    list-style-type: none;
+    float: left;
+    text-decoration: none;
+    margin-left: 800px;
+    padding-top: 10px;
+}
+
+.nav ul li{
+    float: left;
+    padding: 2px 5px;
+}
+
+.form{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+ .row{
+    margin-top: 10px;
+ }
+ .navbar-brand{
+    color: darkgrey;
+ }

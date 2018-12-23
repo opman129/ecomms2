@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+{{ object.title }} | {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}    <!--render out database objects-->
+{% load static %}
+<link rel="stylesheet" href="{% static "/fountain/base.css" %}" />
+<div class="posts">
+    <div class="content-markdown"></div>
+{% if object.image != none %}
+    <img src="{{ object.image.url }}" class="img-fluid" alt="Image" style="width: 100%; height: 300px;">
+{% else %}<h3 style="color:darkolivegreen; text-align:right;">Image not availaible</h3>{% endif %}    
+<h2 style="margin-top:10px;">{{ object.title }}</h2><small>{{ object.timestamp }}</small>
+{% if object.user.get_full_name %}
+<p>Author: <strong>{{ object.user.get_full_name }}</strong></p>
+{% endif %}
+<hr style="font-weight:bold">
+
+<h5 style="font-size: 17px;">{% if object.content != None and object.content != '' %}{{ object.content|linebreaks }}
+    {%else %}Coming soon{% endif %}</h5>
+    <div class="fb-like" data-href="{{ request.build_absolute_url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    <div class="fb-comments" data-href="{{ request.build_absolute_url }}" data-numposts="5"></div>
+</div>
+{% endblock %}
+
