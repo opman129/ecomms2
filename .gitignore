@@ -1,25 +1,10 @@
-<<<<<<< HEAD
-.DS_STORE
-
-# Virtualenv related
-bin/
-include/
-pip-selfcheck.json
-pages/
-courses/
-courses
-# Django related 
-# src/<yourproject>/settings/local.py
-# static-cdn/  # any collected static files 
-
-=======
 .py[cod]
 .DS_Store
 bin/
 include/
 pip-selfcheck.json
 db.sqlite3
->>>>>>> b7b1c4dbac4b6de4abf914242d9c4d5c0e71e3a7
+pages/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
