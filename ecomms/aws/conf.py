@@ -27,6 +27,6 @@ AWS_HEADERS = {
     'Cache-Control': 'max-age=%d' % (int(two_months.total_seconds()), ),
 }
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'ecomms/static'),
-]
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, 'ecomms/static'),
+#]
