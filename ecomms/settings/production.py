@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ecomms.urls'S3DIRECT_REGION = 'us-east-1'
+ROOT_URLCONF = 'ecomms.urls'
 
 TEMPLATES = [
     {
@@ -137,6 +137,7 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
 }
+S3DIRECT_REGION = 'us-east-1'
 AWS_LOCATION = 'static'
 AWS_DEFAULT_ACL = None
 
