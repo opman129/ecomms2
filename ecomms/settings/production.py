@@ -128,6 +128,7 @@ USE_TZ = True
 
 #STATIC_URL = '/static/'
 
+#simpleisbetterthancomplex.com Amazons3
 #(AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 #AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
 #AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
@@ -144,7 +145,7 @@ USE_TZ = True
 #STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 #STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 #)
-#cfe Amazons3
+
 
 CORS_REPLACE_HTTPS_REFERER      = True
 HOST_SCHEME                     = "https://"
