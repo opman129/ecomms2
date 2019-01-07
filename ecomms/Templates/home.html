@@ -1,21 +1,33 @@
+{% extends 'base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>S3 Example Static Only</title>
+  <title>FountainTech Inc.</title>
   <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+  {% block content %}
+  <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
 </head>
 <body>
-  <header>
-    <h1>S3 Example Static Only</h1>
-  </header>
-  <main>
-    <img src="{% static 'img/pic03.1.jpg' %}" alt="thums up">
-    <h2>It's working!</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <header class="col">
+        <h3>S3 Example Static Only</h3>
+      </header>
+  </div>
+  <main class= "container-fluid">
+    <div class="row">
+        <div class="col">
+          <img src="{% static 'img/pic03.1.jpg' %}" class="img-fluid" alt="thums up">
+        </div>
+    </div>
+    <h4>It's working!</h4>
   </main>
-  <footer>
+  <footer class="container-fluid">
     <a href="https://simpleisbetterthancomplex.com">www.SimpleIsBetterThanComplex.com</a>
   </footer>
 </body>
+{% endblock %}
 </html>
+
