@@ -3,3 +3,15 @@ body {
     width: 100%;
     margin: auto;
 }
+
+h4{
+    margin-top: 20px;
+}
+
+.carousel-inner{
+    justify-content: center;
+    background-size: cover;
+    display: block;
+    max-width: 100%;
+    max-height: 500px;
+}
