@@ -1,31 +1,34 @@
 {% load static %}
 <!DOCTYPE HTML>
-<!--
-	Transitive by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 	<head>
 		<title>FountainTech Inc.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<style>
+			#banner{
+				background-image: url("{% static 'img/banner.jpg' %}" ) 
+			}
+			.wrapper.style3{
+				background-image: url(" {% static 'img/bg.jpg' %}" )
+			}
+		</style>
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">FountainTech</div>
+				<div class="logo"><a href="{% url 'home' %}">FountainTech</div>
 				<a href="#menu" class="toggle"><span>Menu</span></a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
+					<li><a href="{% url 'home' %}">Home</a></li>
+					<li><a href="{% url 'generic' %}">Generic</a></li>
+					<li><a href="{% url 'elements' %}">Elements</a></li>
 				</ul>
 			</nav>
 
@@ -35,11 +38,11 @@
 			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
 			formats to work correctly.
 		-->
-			<section id="banner" data-video="images/banner">
+			<section id="banner" data-video="{% static 'img/banner.jpg' %}">
 				<div class="inner">
 					<h1>FountainTech</h1>
 					<p>A full responsive, business-oriented HTML5/CSS3 template<br />
-					built by <a href="https://templated.co/">FountainTech.</a> Build your amazing websites too!! <a href="https://templated.co/license">Creative Commons</a>.</p>
+					built by <a href="https://ecomms.herokuapp.com/">FountainTech.</a> Build your amazing websites too !! </p>
 					<a href="#one" class="button special scrolly">Get Started</a>
 				</div>
 			</section>
@@ -109,7 +112,7 @@
 						<div>
 							<div class="box">
 								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
+									<img src="{% static 'img/pic02.jpg' %}" alt="" />
 								</div>
 								<div class="content">
 									<header class="align-center">
@@ -125,7 +128,7 @@
 						<div>
 							<div class="box">
 								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
+									<img src="{% static 'img/pic03.jpg' %}" alt="" />
 								</div>
 								<div class="content">
 									<header class="align-center">
@@ -162,7 +165,7 @@
 							<div class="content">
 								<h2 class="align-center">Get in Touch</h2>
 								<hr />
-								<form action="#" method="post">
+								<form action="" method="POST">
 									<div class="field half first">
 										<label for="name">Name</label>
 										<input name="name" id="name" type="text" placeholder="Name">
@@ -201,12 +204,12 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="{% static 'javascript/jquery.min.js' %}"></script>
+			<script src="{% static 'javascript/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'javascript/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'javascript/skel.min.js' %}"></script>
+			<script src="{% static 'javascript/util.js' %}"></script>
+			<script src="{% static 'javascript/main.js' %}"></script>
 
 	</body>
 </html>

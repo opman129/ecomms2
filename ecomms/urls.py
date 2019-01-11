@@ -20,4 +20,6 @@ from ecomms import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('admin/', admin.site.urls),
+    path('elements', views.elements, name='elements'),
+    path('generic', views.generic, name='generic'),
 ]
