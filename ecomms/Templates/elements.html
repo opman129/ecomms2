@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE HTML>
 <!--
 	Transitive by TEMPLATED
@@ -6,25 +7,25 @@
 -->
 <html>
 	<head>
-		<title>Elements - Transitive by TEMPLATED</title>
+		<title>Elements - FountainTech</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
 	</head>
 	<body class="subpage">
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="index.html">Transitive <span>by TEMPLATED</span></a></div>
+				<div class="logo"><a href="{% url 'home' %}">FountainTech</div>
 				<a href="#menu" class="toggle"><span>Menu</span></a>
 			</header>
 
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
+					<li><a href="{% url 'home' %}">Home</a></li>
+					<li><a href="{% url 'generic' %}">Generic</a></li>
+					<li><a href="{% url 'elements' %}">Elements</a></li>
 				</ul>
 			</nav>
 

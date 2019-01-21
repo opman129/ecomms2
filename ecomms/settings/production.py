@@ -123,31 +123,10 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
+ #Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 #STATIC_URL = '/static/'
-
-#simpleisbetterthancomplex.com Amazons3
-
-#AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-#AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
-#AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
-#AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-#AWS_S3_OBJECT_PARAMETERS = {
-#    'CacheControl': 'max-age=86400',
-#}
-#S3DIRECT_REGION = 'us-east-1'
-#AWS_LOCATION = 'static'
-#AWS_DEFAULT_ACL = None
-
-#STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, 'ecomms/static'),
-#]
-#STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-#STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-
 
 CORS_REPLACE_HTTPS_REFERER      = True
 HOST_SCHEME                     = "https://"
